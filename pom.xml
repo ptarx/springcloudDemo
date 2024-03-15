@@ -11,6 +11,7 @@
     <modules>
         <module>mybatis-generator</module>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-consumer-order80</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

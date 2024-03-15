@@ -57,4 +57,6 @@ public class PayController {
         List<Pay> all = payService.getAll();
         return ResultData.success(all);
     }
+
+
 }
