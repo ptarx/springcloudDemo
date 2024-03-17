@@ -15,7 +15,7 @@ import top.ptarx.resp.ResultData;
 @Tag(name="支付微服务模块",description = "支付CRUD")
 public class PayController {
 
-    private String HOST_URL="http://localhost:8081";
+    private String HOST_URL="http://localhost:8001";
     @Resource
     private RestTemplate restTemplate;
 
@@ -46,7 +46,7 @@ public class PayController {
     @GetMapping(value="selectAll")
     @Operation(summary = "列表",description = "支付流水列表")
     public ResultData selectAll(){
-        return restTemplate.getForObject(HOST_URL+"/selectAll",ResultData.class);
+        return restTemplate.getForObject(HOST_URL+"/pay/selectAll",ResultData.class);
     }
 
 
